@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Manipulation du DOM avec JS</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<body>
+	<header><h1>Manipulation du DOM avec JS</h1></header>
+	<div class="container">
+		<section class="ex1">
+			<div class="enonce">
+				<h2>Exercice 1 :</h2>
+				Créer un texte qui s’agrandit au au click, puis si on reclick dessus il reprend sa taille d’origine.
+			</div>
+			<blockquote id="txt">
+				<span id="quotes">"</span>That's the problem with humans... they just sit around, hoping that someone will fix things. But no one will. No one cares. The universe is infinite and chaotic and cold. And there has never been a plan. At least not till now.<span id="quotes">"</span>
+				<br>
+
+				<span id="source"> Root - Person Of Interest</span>
+			</blockquote> 
+		</section>
+		<section class="ex2">
+			<div class="enonce">
+				<h2>Exercice 2 :</h2>
+				Créer 5 boutons et un rectangle bleu de 100px par 100px au centre de la page. Chaque bouton provoque une action sur le rectangle.
+				<ul>
+					<li>Bouton 1 : augmente la hauteur de 10px, si il dépasse 300px, il remet la hauteur à 100px</li>
+					<li>Bouton 2 : met le rectangle en vert</li>
+					<li>Bouton 3 : remet les couleurs initiales</li>
+					<li>Bouton 4 : fait disparaître le rectangle</li>
+					<li>Bouton 5 : fait réapparaître le rectangle</li>
+				</ul>
+			</div>
+			<div class="console">
+				<div class="button">
+					<button class="hauteur" id="hauteur"> Agrandis-moi !</button>
+					<button class="vert" id="vert"> Change ma couleur !</button>
+					<button class="reset" id="reset"> On recommence !</button>
+					<button class="hide" id="hide"> Je disparais !</button>
+					<button class="show" id="show"> Je réapparais !</button>
+				</div>
+
+				<div class="rectangle" id="rectangle"></div>
+			</div>			
+		</section>
+		<section class="ex3">			
+			<div class="enonce">
+				<h2>Exercice 3 :</h2>
+				Reprendre le rectangle bleu, et lorsqu’on appui sur la flèche du haut le faire monter de 100px puis reprendre sa place initiale. ATTENTION il doit monter et descendre en un appui uniquement.
+			</div>
+			<div class="rectangle2" id="rectangle2"></div>
+		</section>
+		<section class="ex4">			
+			<div class="enonce">
+				<h2>Exercice 4 :</h2>
+				Faire bouger le rectangle dans son container à l'aide des touches du clavier.
+			</div>
+			<div class="parent" id="parent">
+				<div class="rect" id="rect"></div>
+			</div>
+		</section>		
+	</div>
+	<footer> © 2018 - Dorothee VIARD </footer>
+	<script src="./js/main.js"></script>
+</body>
+</html>
